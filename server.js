@@ -1,8 +1,8 @@
 const app = require('./router');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, 'localhost', () => {
-    console.log('LISTENING');
+    console.log(`Listening on Port: ${port} in ${process.env.ENVIRONMENT} mode`);
 
 });
