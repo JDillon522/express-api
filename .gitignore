@@ -1,3 +1,6 @@
 node_modules
 
+# Ignore all config and key files
 .env
+*.key
+*.cert
